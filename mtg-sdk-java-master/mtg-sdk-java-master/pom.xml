@@ -128,6 +128,32 @@
 	</build>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>io.magicthegathering</groupId>
+			<artifactId>javasdk</artifactId>
+			<version>0.0.18</version>
+		</dependency>
+
+		<dependency>
+    		<groupId>io.magicthegathering</groupId>
+    		<artifactId>javasdk</artifactId>
+    		<version>0.0.18</version>
+	</dependency>
+		
+		<dependency>
+			<groupId>dev.openfeature</groupId>
+			<artifactId>javasdk</artifactId>
+			<version>0.2.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>dev.openfeature</groupId>
+			<artifactId>javasdk</artifactId>
+			<version>0.2.2</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
