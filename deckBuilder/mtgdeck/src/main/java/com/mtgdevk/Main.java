@@ -40,7 +40,7 @@ public class Main {
     System.out.println("Which card would you like in your deck? (1-5, enter 0 to end)");
     int finalChoice = Integer.valueOf(cardChoice.next());
     finalChoice--;
-    if( finalChoice == 0){
+    if( finalChoice == -1){
     }
     else{
         System.out.println(cards.get(finalChoice));
