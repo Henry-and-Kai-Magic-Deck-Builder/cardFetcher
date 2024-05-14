@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 import io.magicthegathering.javasdk.api.*;
 import javax.swing.JOptionPane;
+import javax.swing.JComponent;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -12,8 +14,6 @@ public class Main {
         List<Card> cards = new ArrayList<>();
         List<Card> deck = new ArrayList<>();
         Card chosenCard;
-        Scanner userInput = new Scanner(System.in); 
-        Scanner cardChoice = new Scanner(System.in);
         String input;
         String filter;
         int i = JOptionPane.YES_NO_OPTION;
@@ -33,11 +33,11 @@ public class Main {
                 } 
             catch(Exception e){
                 //program fails to pull from the API somehow
-                System.out.println("Sorry, something went wrong.");
-                }
+                JOptionPane.showMessageDialog(null, "Sorry, something went wrong");
+            }
         //if the name entered doesn't exist
         if (cards.size() == 0){
-            System.out.println("0 results found");
+            JOptionPane.showMessageDialog(null, "0 results found");        
         }
         else{
             counter = 0;
@@ -52,11 +52,7 @@ public class Main {
             }
             //JOptionPane.showMessageDialog(null, "Oh Hello.." +name);
             //user choses which of the top 5 to chose from
-            /*
-             *
-             
-            System.out.println("Which card would you like in your deck? (1-5, enter 0 to end)");
-            finalChoice = cardChoice.nextInt();
+            finalChoice = Integer.parseInt(JOptionPane.showInputDialog("Which card would you like? [1-5], [0] to exit"));
             //list selects from 0-4, so 1 is subtracted from the variable
             finalChoice--;
             if(finalChoice == -1){
@@ -65,12 +61,9 @@ public class Main {
                 //add the chosen card to a list variable called deck
                 chosenCard = cards.get(finalChoice);
                 deck.add(chosenCard);
-                System.out.println(deck);
+                JOptionPane.showMessageDialog(null, deck);            
             }
-            */
-            chosenCard = cards.get(0);
-                deck.add(chosenCard);
-                System.out.println(deck);
+
             //allows the user to quit
             if (JOptionPane.showConfirmDialog(null, "Would you like to keep adding to your deck?", "WARNING",
                 JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
