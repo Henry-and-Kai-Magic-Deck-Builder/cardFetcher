@@ -1,0 +1,421 @@
+{
+    "cards": [
+        {
+            "name": "Giant Scorpion",
+            "manaCost": "{2}{B}",
+            "cmc": 3,
+            "colors": [
+                "B"
+            ],
+            "colorIdentity": [
+                "B"
+            ],
+            "type": "Creature — Scorpion",
+            "types": [
+                "Creature"
+            ],
+            "subtypes": [
+                "Scorpion"
+            ],
+            "rarity": "Common",
+            "set": "DDR",
+            "setName": "Duel Decks: Nissa vs. Ob Nixilis",
+            "text": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+            "flavor": "Its sting hurts, but death is strangely painless.",
+            "artist": "Raymond Swanland",
+            "number": "50",
+            "power": "1",
+            "toughness": "3",
+            "layout": "normal",
+            "multiverseid": "417473",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417473&type=card",
+            "foreignNames": [
+                {
+                    "name": "巨大蠍",
+                    "text": "接死（これが何らかのダメージをクリーチャーに与えたら、それだけで破壊する。）",
+                    "type": "クリーチャー — 蠍",
+                    "flavor": "刺されれば痛むが、死は奇妙なほどに痛みを伴わない。",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417548&type=card",
+                    "language": "Japanese",
+                    "multiverseid": 417548
+                }
+            ],
+            "printings": [
+                "DDR",
+                "M13",
+                "ZEN"
+            ],
+            "originalText": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+            "originalType": "Creature — Scorpion",
+            "legalities": [
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pauper",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Paupercommander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Predh",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "b1b70586-d01c-5418-9ec9-9b90b17bb594"
+        },
+        {
+            "name": "Giant Scorpion",
+            "manaCost": "{2}{B}",
+            "cmc": 3,
+            "colors": [
+                "B"
+            ],
+            "colorIdentity": [
+                "B"
+            ],
+            "type": "Creature — Scorpion",
+            "types": [
+                "Creature"
+            ],
+            "subtypes": [
+                "Scorpion"
+            ],
+            "rarity": "Common",
+            "set": "M13",
+            "setName": "Magic 2013",
+            "text": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+            "flavor": "Its sting hurts, but death is strangely painless.",
+            "artist": "Raymond Swanland",
+            "number": "94",
+            "power": "1",
+            "toughness": "3",
+            "layout": "normal",
+            "multiverseid": "260986",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=260986&type=card",
+            "foreignNames": [
+                {
+                    "name": "Riesenskorpion",
+                    "text": "Todesberührung (Eine beliebige Menge Schadenspunkte, die er einer Kreatur zufügt, sind ausreichend, um diese zu zerstören.)",
+                    "type": "Kreatur — Skorpion",
+                    "flavor": "Der Stich tut weh, der Tod ist dagegen schmerzlos.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=332097&type=card",
+                    "language": "German",
+                    "multiverseid": 332097
+                },
+                {
+                    "name": "Escorpión gigante",
+                    "text": "Toque mortal. (Cualquier cantidad de daño que esto haga a una criatura es suficiente para destruirla.)",
+                    "type": "Criatura — Escorpión",
+                    "flavor": "Su picadura duele, pero la muerte es curiosamente indolora.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=332346&type=card",
+                    "language": "Spanish",
+                    "multiverseid": 332346
+                },
+                {
+                    "name": "Scorpion géant",
+                    "text": "Contact mortel (Le nombre de blessures que cette créature inflige à une créature, quel qu'il soit, est suffisant pour la détruire.)",
+                    "type": "Créature : scorpion",
+                    "flavor": "Sa piqûre fait mal, mais la mort est ensuite étrangement sans douleur.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=331599&type=card",
+                    "language": "French",
+                    "multiverseid": 331599
+                },
+                {
+                    "name": "Scorpione Gigante",
+                    "text": "Tocco letale (Qualsiasi danno che questa creatura infligge a una creatura è sufficiente a distruggerla.)",
+                    "type": "Creatura — Scorpione",
+                    "flavor": "Il suo pungiglione fa male, ma la morte è stranamente indolore.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=332595&type=card",
+                    "language": "Italian",
+                    "multiverseid": 332595
+                },
+                {
+                    "name": "巨大蠍",
+                    "text": "接死（これが何らかのダメージをクリーチャーに与えた場合、それだけで破壊される。）",
+                    "type": "クリーチャー — 蠍",
+                    "flavor": "刺されれば痛むが、死は奇妙なほどに痛みを伴わない。",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=332844&type=card",
+                    "language": "Japanese",
+                    "multiverseid": 332844
+                },
+                {
+                    "name": "거대한 전갈",
+                    "text": "치명타 (이 생물에게 피해를 입은 생물은 피해의 양에 상관없이 파괴된다.)",
+                    "type": "생물 — 전갈",
+                    "flavor": "그것의 독침은 아프지만, 묘하게도 고통 없이 죽는다.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=330603&type=card",
+                    "language": "Korean",
+                    "multiverseid": 330603
+                },
+                {
+                    "name": "Escorpião Gigante",
+                    "text": "Toque mortífero (Qualquer quantidade de dano que esta criatura cause a uma criatura é suficiente para destruí-la.)",
+                    "type": "Criatura — Escorpião",
+                    "flavor": "A ferroada dói, mas a morte é estranhamente indolor.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=331350&type=card",
+                    "language": "Portuguese (Brazil)",
+                    "multiverseid": 331350
+                },
+                {
+                    "name": "Гигантский Скорпион",
+                    "text": "Смертельное касание (Любое количество повреждений, которое этот объект наносит существу, достаточно, чтобы его уничтожить.)",
+                    "type": "Существо — Скорпион",
+                    "flavor": "Он больно жалит, но смерть, как ни странно, наступает легко.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=331848&type=card",
+                    "language": "Russian",
+                    "multiverseid": 331848
+                },
+                {
+                    "name": "巨型蝎子",
+                    "text": "死触（它对生物造成的任何数量伤害都足以消灭后者。）",
+                    "type": "生物～蝎子",
+                    "flavor": "螫起人来很痛，带来的死亡却意外地无痛。",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=330354&type=card",
+                    "language": "Chinese Simplified",
+                    "multiverseid": 330354
+                },
+                {
+                    "name": "巨型蠍子",
+                    "text": "死觸（它對生物造成的任何數量傷害都足以消滅後者。）",
+                    "type": "生物～蠍子",
+                    "flavor": "螫起人來很痛，帶來的死亡卻意外地無痛。",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=330852&type=card",
+                    "language": "Chinese Traditional",
+                    "multiverseid": 330852
+                }
+            ],
+            "printings": [
+                "DDR",
+                "M13",
+                "ZEN"
+            ],
+            "originalText": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+            "originalType": "Creature — Scorpion",
+            "legalities": [
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pauper",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Paupercommander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Predh",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "f7872890-bf93-5c14-9ee6-56d1f009ea5c"
+        },
+        {
+            "name": "Giant Scorpion",
+            "manaCost": "{2}{B}",
+            "cmc": 3,
+            "colors": [
+                "B"
+            ],
+            "colorIdentity": [
+                "B"
+            ],
+            "type": "Creature — Scorpion",
+            "types": [
+                "Creature"
+            ],
+            "subtypes": [
+                "Scorpion"
+            ],
+            "rarity": "Common",
+            "set": "ZEN",
+            "setName": "Zendikar",
+            "text": "Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+            "flavor": "Its sting hurts, but death is strangely painless.",
+            "artist": "Raymond Swanland",
+            "number": "90",
+            "power": "1",
+            "toughness": "3",
+            "layout": "normal",
+            "multiverseid": "192226",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=192226&type=card",
+            "foreignNames": [
+                {
+                    "name": "Riesenskorpion",
+                    "text": "Todesberührung (Kreaturen, denen von dieser Kreatur Schaden zugefügt wird, werden zerstört. Du kannst den Kampfschaden dieser Kreatur zwischen den Kreaturen aufteilen, die sie blockt oder von denen sie geblockt wird.)",
+                    "type": "Kreatur — Skorpion",
+                    "flavor": "Der Stich tut weh, der Tod ist dagegen schmerzlos.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=204170&type=card",
+                    "language": "German",
+                    "multiverseid": 204170
+                },
+                {
+                    "name": "Escorpión gigante",
+                    "text": "Toque mortal. (Las criaturas que reciben daño de esta criatura son destruidas. Puedes dividir el daño de combate de esta criatura entre las criaturas que la bloquean o que ella bloquea.)",
+                    "type": "Criatura — Escorpión",
+                    "flavor": "Su picadura duele, pero la muerte es curiosamente indolora.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=202825&type=card",
+                    "language": "Spanish",
+                    "multiverseid": 202825
+                },
+                {
+                    "name": "Scorpion géant",
+                    "text": "Contact mortel (Les créatures qui subissent des blessures de cette créature sont détruites. Vous pouvez partager les blessures de combat de cette créature entre toutes les créatures qui la bloquent ou qu'elle bloque.)",
+                    "type": "Créature : scorpion",
+                    "flavor": "Sa piqûre fait mal, mais la mort est ensuite étrangement sans douleur.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=204439&type=card",
+                    "language": "French",
+                    "multiverseid": 204439
+                },
+                {
+                    "name": "Scorpione Gigante",
+                    "text": "Tocco letale (Le creature a cui è stato inflitto danno da questa creatura vengono distrutte. Puoi dividere il danno da combattimento di questa creatura tra un numero qualsiasi di creature che bloccano o sono bloccate da essa.)",
+                    "type": "Creatura — Scorpione",
+                    "flavor": "Il suo pungiglione fa male, ma la morte è stranamente indolore.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=203094&type=card",
+                    "language": "Italian",
+                    "multiverseid": 203094
+                },
+                {
+                    "name": "巨大蠍",
+                    "text": "接死 （このクリーチャーにダメージを与えられたクリーチャーは破壊される。 このクリーチャーの戦闘ダメージは、それがブロックしている、あるいはそれをブロックしているクリーチャーの中で好きなように割り振れる。）",
+                    "type": "クリーチャー — 蠍",
+                    "flavor": "刺されれば痛むが、死は奇妙なほどに痛みを伴わない。",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=203901&type=card",
+                    "language": "Japanese",
+                    "multiverseid": 203901
+                },
+                {
+                    "name": "Escorpião Gigante",
+                    "text": "Toque mortífero (Criaturas que sofrem dano causado por essa criatura são destruídas. Você pode dividir o dano de combate dessa criatura entre quaisquer criaturas que a bloqueiem ou sejam bloqueadas por ela.)",
+                    "type": "Criatura — Escorpião",
+                    "flavor": "Sua picada é dolorosa, mas a morte é estranhamente indolor.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=203632&type=card",
+                    "language": "Portuguese (Brazil)",
+                    "multiverseid": 203632
+                },
+                {
+                    "name": "Гигантский Скорпион",
+                    "text": "Смертельное касание (Существа, которым это существо нанесло повреждения, уничтожаются. Вы можете распределить наносимые этим существом боевые повреждения между любыми блокирующими его или заблокированными им существами.)",
+                    "type": "Существо — Скорпион",
+                    "flavor": "Он больно жалит, но смерть, как ни странно, наступает легко.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=203363&type=card",
+                    "language": "Russian",
+                    "multiverseid": 203363
+                },
+                {
+                    "name": "巨型蝎子",
+                    "text": "死触 （受到此生物之伤害的生物会被消灭。 你可以将此生物之战斗伤害在阻挡它或被它阻挡的任何生物之间分配。）",
+                    "type": "生物～蝎子",
+                    "flavor": "螫起人来很痛，带来的死亡却意外地无痛。",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=204708&type=card",
+                    "language": "Chinese Simplified",
+                    "multiverseid": 204708
+                }
+            ],
+            "printings": [
+                "DDR",
+                "M13",
+                "ZEN"
+            ],
+            "originalText": "Deathtouch (Creatures dealt damage by this creature are destroyed. You can divide this creature's combat damage among any of the creatures blocking or blocked by it.)",
+            "originalType": "Creature — Scorpion",
+            "legalities": [
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pauper",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Paupercommander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Predh",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "3da693a5-1291-5806-8fab-4a8ef90094a5"
+        }
+    ]
+}
