@@ -6,7 +6,7 @@ import org.json.simple.JSONObject;
 import io.magicthegathering.javasdk.resource.Card;
 
 public class deckSaver {
-    public static JSONObject saveCard(Card card){
+    public static JSONObject saveCard(Card card) {
         JSONObject currentCard = new JSONObject();
         
         currentCard.put("MultID", card.getMultiverseid());
