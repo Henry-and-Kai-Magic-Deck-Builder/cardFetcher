@@ -1,33 +1,30 @@
 package com.mtgdevk;
-import javax.swing.JOptionPane;
-import javax.swing.JComponent;
 
+import java.lang.StringBuffer;
 import io.magicthegathering.javasdk.resource.Card;
 
 
-//method for printing only relevant info of a card
+//method for returning the image url for a card
 public class cardPrinter {
-    public void printCard(Card card){
-        //card = CardAPI.getCard(1);
-        //print multiverse ID
+    public static String printCard(Card card){
+        
+        //get the image url
+        String imageURL;
+        imageURL = card.getImageUrl();
 
-        String name, manaCost, setName, powerAndToughness, loyalty, text;
-        int id;
-        id = card.getMultiverseid();
-        name = card.getName();
-        manaCost = card.getManaCost();
-        setName = card.getSetName();
-        powerAndToughness =  card.getPower()!=null?(card.getPower() + "/" + card.getToughness()):"";
-        loyalty = card.getLoyalty()!=null?("[" + card.getLoyalty() + "]"):"";
-        text = card.getText()!=null?("'" + card.getText() + "'\n-------------------------\n" ):"";
+        //insert an extra s or else link doesn't work
+        
+        
+        if (imageURL != null){
+        StringBuffer link = new StringBuffer(imageURL);
+        link.insert(4, "s");
+        imageURL = link.toString();
+        }
 
-        JOptionPane.showMessageDialog(null, "\nMult ID: " + id+"\n"+ 
-        name + " / " + manaCost+"\n"+
-        setName+"\n"+
-        powerAndToughness + "\n"+
-        loyalty +"\n"+
-        text);
-        //print everything
-
+        //default image for error handling
+        else {
+            imageURL = "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=461001&type=card";
+        }
+        return imageURL;
     }
 }

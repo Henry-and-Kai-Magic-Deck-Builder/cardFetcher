@@ -3,6 +3,8 @@ package com.mtgdevk;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -10,6 +12,8 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import io.magicthegathering.javasdk.resource.Card;
+
+import java.nio.file.*;
 
     public class Deck {
         private JSONArray deck;
@@ -51,15 +55,23 @@ import io.magicthegathering.javasdk.resource.Card;
         }
 
         public static Deck loadFromFile() {
-            JSONParser parser = new JSONParser();
-            JSONArray a = new JSONArray();
-            try {
-                a = (JSONArray) parser.parse(new FileReader("deckBuilder\\foundryDeckData\\deck.json"));
-            } catch (IOException | ParseException e) {
-                e.printStackTrace();
+            Path path = Paths.get("deckBuilder\\foundryDeckData\\deck.json");
+
+            if (Files.exists(path)) {
+                JSONParser parser = new JSONParser();
+                JSONArray a = new JSONArray();
+                try {
+                    a = (JSONArray) parser.parse(new FileReader("deckBuilder\\foundryDeckData\\deck.json"));
+                } catch (IOException | ParseException e) {
+                    e.printStackTrace();
+                }
+                Deck loadedDeck = new Deck(a);
+                return loadedDeck;
             }
-            Deck loadedDeck = new Deck(a);
-            return loadedDeck; 
+            else{
+                Deck loadedDeck = new Deck();
+                return loadedDeck;
+            }
         }
     
 
@@ -76,6 +88,7 @@ import io.magicthegathering.javasdk.resource.Card;
             
         }
     }
+    
 
 
 
