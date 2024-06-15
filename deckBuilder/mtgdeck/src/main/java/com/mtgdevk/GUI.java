@@ -2,20 +2,16 @@ package com.mtgdevk;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import javax.swing.JTextArea;
 import java.awt.GridLayout;
 import java.io.*; 
-import java.net.MalformedURLException; 
 import java.net.URL; 
 import javax.imageio.ImageIO;
 
@@ -23,7 +19,7 @@ import io.magicthegathering.javasdk.resource.Card;
 
 import java.awt.FlowLayout;
 import java.awt.Container;
-//TODO stop program from breaking when API returns less than 5 cards
+
 public class GUI {
     //cardSearch search = new cardSearch();
     SearchAPI search = new SearchAPI();
@@ -45,6 +41,7 @@ public class GUI {
     Image getImage3 = null;
     Image getImage4 = null;
     Image getImage5 = null;
+
     
     
 
@@ -98,7 +95,6 @@ public class GUI {
         cp.add(choice5Label);
         //cp.add(label);
 
-
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
@@ -108,60 +104,60 @@ public class GUI {
             @Override
             public void actionPerformed(ActionEvent ae){
                 Object buttonClicked = ae.getSource();
+                
                 if (buttonClicked == button1){
+
+                    //innitialize variables
+                    List<BufferedImage> images = new ArrayList();
+                    List<ImageIcon> imageIcons = new ArrayList();
+
+                    int a = 0;
                     String searchText = input.getText();
+
                     cards = SearchAPI.searchCards(searchText);
                     label.setText(searchText);
-                    try {
-						URL url1 = new URL(cardPrinter.printCard(cards.get(0)));
-                        getImage1 = ImageIO.read(url1);
-                    } catch (IOException e) {
-        	            e.printStackTrace();
+
+                    //add the image urls to the images list for as long as the program has cards left to add or when it's added 5 cards
+                    while((a) < cards.size() && a < 5) {
+                        try {
+                            URL url1 = new URL(cardPrinter.printCard(cards.get(a)));
+                            images.add(ImageIO.read(url1));
+                            a++;
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
 
-                    try {
-						URL url2 = new URL(cardPrinter.printCard(cards.get(1)));
-                        getImage2 = ImageIO.read(url2);
-                    } catch (IOException e) {
-        	            e.printStackTrace();
+                    //if the images list has less than 5 images in it, fill the difference with "no result found" messaages
+                    while (a < 5){
+                        try {
+                            URL url1 = new URL("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikBmWDCkpy33Qkb-HlcYEtELaLfyqmITdki9-Av0PQArqibdm2UyWX0_3rdI5QAgOBLloClYsqzLkbPLEBFYW-8x2S9f3k-aFIISKd3AsoovciBUT2m7PKCMLVKaVylYStHjtt6mQz_xw0J-mYeeRU9SFtog18a4oHZX2sItYiql4aieWsw6zJSsqAdzVk/s320/no%20result%20found.jpg");
+                            images.add(ImageIO.read(url1));
+                            a++;
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
-                    try {
-						URL url3 = new URL(cardPrinter.printCard(cards.get(2)));
-                        getImage3 = ImageIO.read(url3);
-                    } catch (IOException e) {
-        	            e.printStackTrace();
+
+                    //turn the images urls into imageicons and add them to the imageicons list
+                    a = 0;
+                    while(a < images.size()){
+                    imageIcons.add(new ImageIcon(images.get(a)));
+                    a++;
                     }
-                    try {
-						URL url4 = new URL(cardPrinter.printCard(cards.get(3)));
-                        getImage4 = ImageIO.read(url4);
-                    } catch (IOException e) {
-        	            e.printStackTrace();
-                    }
-                    try {
-						URL url5 = new URL(cardPrinter.printCard(cards.get(4)));
-                        getImage5 = ImageIO.read(url5);
-                    } catch (IOException e) {
-        	            e.printStackTrace();
-                    }
-                    System.out.println(cardPrinter.printCard(cards.get(0)));
-                    System.out.println(cardPrinter.printCard(cards.get(1)));
-                    System.out.println(cardPrinter.printCard(cards.get(2)));
-                    System.out.println(cardPrinter.printCard(cards.get(3)));
-                    System.out.println(cardPrinter.printCard(cards.get(4)));
+                    
+                    //set the choice labels to the imagesicons from imageIcons
+                        choice1Label.setIcon(imageIcons.get(0));
+    
+                        choice2Label.setIcon(imageIcons.get(1));
 
-                    ImageIcon image1 = new ImageIcon(getImage1);
-                    ImageIcon image2 = new ImageIcon(getImage2);
-                    ImageIcon image3 = new ImageIcon(getImage3);
-                    ImageIcon image4 = new ImageIcon(getImage4);
-                    ImageIcon image5 = new ImageIcon(getImage5);
+                        choice3Label.setIcon(imageIcons.get(2));
 
+                        choice4Label.setIcon(imageIcons.get(3));
 
+                        choice5Label.setIcon(imageIcons.get(4));
 
-                    choice1Label.setIcon(image1);
-                    choice2Label.setIcon(image2);
-                    choice3Label.setIcon(image3);
-                    choice4Label.setIcon(image4);
-                    choice5Label.setIcon(image5);
+                    
 
 
                 }else if (buttonClicked == choice1Button){
@@ -199,7 +195,7 @@ public class GUI {
         choice4Button.addActionListener(buttonListener);
         choice5Button.addActionListener(buttonListener);
     }
-
+}
 
 
 
@@ -213,4 +209,4 @@ public class GUI {
         }
     }
         */
-}
+

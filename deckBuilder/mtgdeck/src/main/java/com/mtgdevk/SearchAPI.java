@@ -23,10 +23,6 @@ public class SearchAPI {
                 //program fails to pull from the API somehow
                 JOptionPane.showMessageDialog(null, "Sorry, something went wrong");
             }
-        //if the name entered doesn't exist
-        if (cards.size() == 0){
-            JOptionPane.showMessageDialog(null, "0 results found");        
-        }
     return cards;
 }
 }

@@ -3,13 +3,12 @@ package com.mtgdevk;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.json.*;
 
 import io.magicthegathering.javasdk.resource.Card;
 
@@ -33,6 +32,15 @@ import java.nio.file.*;
         public void setDeck(JSONArray a) {
             deck = a;
         }
+
+        //TODO method that returns a card from a deck based on multID
+        /*public Card findCard(String b){
+                JSONObject obj = new JSONObject();
+                for (int i = 0; i < deck.size(); i++)
+                {
+                JSONObject card = deck.getJsonObject(b);
+                }
+        }*/
 
         public void addCard(Card c) {
             JSONObject jsonObj = new JSONObject();
